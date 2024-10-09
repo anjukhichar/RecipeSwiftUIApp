@@ -67,6 +67,7 @@ Time Spent
 
 
 Trade-offs and Decisions
+
     1. API Key Hardcoding:
     I hardcoded the urlString within the RecipeService.swift file. For a production environment, I would store it securely using environment variables or a keychain, but to simplify the setup, I hardcoded it here.
 
@@ -78,10 +79,12 @@ Trade-offs and Decisions
 
 
 Weakest Part of the Project
+
     The weakest part of the project is error handling in the UI. Although network errors are handled in the code, the user is not informed if something goes wrong during the recipe fetching process. Ideally, a user-friendly error message or retry option should be implemented to improve user experience when network requests fail.
 
 
 External Code and Dependencies
+
     1. Kingfisher
         For image downloading and caching.
         URL: https://github.com/onevcat/Kingfisher.
