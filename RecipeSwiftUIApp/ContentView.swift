@@ -35,6 +35,10 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Recipes")
+            // Adding pull-to-refresh functionality
+            .refreshable {
+                await viewModel.loadRecipes()
+            }
             .task {
                 await viewModel.loadRecipes()
             }
