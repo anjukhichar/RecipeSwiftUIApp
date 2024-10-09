@@ -1,10 +1,11 @@
 Steps to Run the App
-Prerequisites:
+
+    Prerequisites:
     Xcode 12+ (recommended)
     Swift 5+
     Internet access to fetch data from the API
-
-Steps:
+    
+    Steps:
     Clone the repository:
     git clone https://github.com/anjukhichar/RecipeSwiftUIApp
     
